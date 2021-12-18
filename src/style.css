@@ -1,0 +1,36 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vh;
+    margin: auto;
+}
+
+#carouselContainer{
+    /* background-color: blue; */
+    height: 250px;
+    width: auto;
+    color: rgb(114, 114, 114);
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#frame{
+    height: 30em;
+    width: 20em;
+    /* background-color: blue; */
+    margin: auto;
+}
+
+
+.arrow{
+    margin-top: 150px;
+    scale: 200%;
+    margin-left: 55px;
+    margin-right: 55px;
+    /* height: 50px;
+    width: 50px; */
+    margin: auto;
+}
