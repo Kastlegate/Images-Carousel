@@ -4,13 +4,14 @@ import dragon from './dragon.jpg';
 import shadow from './shadow.jpg';
 import heaven from './heaven.jpg';
 import chaos from './chaos.jpg';
+import wheel from './wheel.jpg';
 import './style.css';
 import './all.css';
 import {  moveLeft, moveRight, selectedNav } from "./carouselFunctions";
 
 
 // background image
-document.body.style.backgroundImage = "url('../src/wheel.jpg')";
+document.body.style.backgroundImage = wheel;
 
 
 
@@ -23,15 +24,15 @@ let imagesArray = new Array();
 imagesArray[0] = new Image();
 imagesArray[0].src = eye;
 imagesArray[1] = new Image();
-imagesArray[1].src = '../src/hunt.jpg';
+imagesArray[1].src = hunt;
 imagesArray[2] = new Image();
-imagesArray[2].src = '../src/dragon.jpg';
+imagesArray[2].src = dragon;
 imagesArray[3] = new Image();
-imagesArray[3].src = '../src/shadow.jpg';
+imagesArray[3].src = shadow;
 imagesArray[4] = new Image();
-imagesArray[4].src = '../src/heaven.jpg';
+imagesArray[4].src = heaven;
 imagesArray[5] = new Image();
-imagesArray[5].src = '../src/chaos.jpg';
+imagesArray[5].src = chaos;
 
 
 
