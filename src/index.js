@@ -1,6 +1,6 @@
 import './style.css';
 import './all.css';
-import { getCurrentBookNumber, moveLeft, moveRight } from "./carouselFunctions";
+import {  moveLeft, moveRight, selectedNav } from "./carouselFunctions";
 
 
 // background image
@@ -44,6 +44,7 @@ book1.id = "book1";
 book1.dataset.bookId = 1;
 book1.src = imagesArray[0].src;
 book1.classList.add("book");
+book1.style.left = "0px";
 container.appendChild(book1);
 let book2 = document.createElement("img")
 book2.id = "book2";
@@ -83,24 +84,42 @@ dotContainer.id = "dotContainer";
 document.body.appendChild(dotContainer);
 
 //navigation dots
-let navDotOne = document.createElement("div");
-navDotOne.classList.add("navDotSelected");
-dotContainer.appendChild(navDotOne);
-let navDotTwo = document.createElement("div");
-navDotTwo.classList.add("navDot");
-dotContainer.appendChild(navDotTwo);
-let navDotThree = document.createElement("div");
-navDotThree.classList.add("navDot");
-dotContainer.appendChild(navDotThree);
-let navDotFour = document.createElement("div");
-navDotFour.classList.add("navDot");
-dotContainer.appendChild(navDotFour);
-let navDotFive = document.createElement("div");
-navDotFive.classList.add("navDot");
-dotContainer.appendChild(navDotFive);
-let navDotSix = document.createElement("div");
-navDotSix.classList.add("navDot");
-dotContainer.appendChild(navDotSix);
+let navDot1 = document.createElement("div");
+navDot1.id = "navDot1";
+navDot1.classList.add("navDotSelected");
+navDot1.dataset.navDot = 1; 
+navDot1.addEventListener("click", selectedNav);
+dotContainer.appendChild(navDot1);
+let navDot2 = document.createElement("div");
+navDot2.id = "navDot2";
+navDot2.classList.add("navDot");
+navDot2.dataset.navDot = 2;
+navDot2.addEventListener("click", selectedNav);
+dotContainer.appendChild(navDot2);
+let navDot3 = document.createElement("div");
+navDot3.id = "navDot3";
+navDot3.classList.add("navDot");
+navDot3.dataset.navDot = 3;
+navDot3.addEventListener("click", selectedNav);
+dotContainer.appendChild(navDot3);
+let navDot4 = document.createElement("div");
+navDot4.id = "navDot4";
+navDot4.classList.add("navDot");
+navDot4.dataset.navDot = 4;
+navDot4.addEventListener("click", selectedNav);
+dotContainer.appendChild(navDot4);
+let navDot5 = document.createElement("div");
+navDot5.id = "navDot5";
+navDot5.classList.add("navDot");
+navDot5.dataset.navDot = 5;
+navDot5.addEventListener("click", selectedNav);
+dotContainer.appendChild(navDot5);
+let navDot6 = document.createElement("div");
+navDot6.id = "navDot6";
+navDot6.classList.add("navDot");
+navDot6.dataset.navDot = 6;
+navDot6.addEventListener("click", selectedNav);
+dotContainer.appendChild(navDot6);
 
 // Arrows for manual navigation
 let arrowContainer = document.createElement("div")
@@ -119,5 +138,5 @@ let rightArrow = document.createElement("div");
     rightArrow.addEventListener("click", moveRight)
     arrowContainer.appendChild(rightArrow);
 
-
+  
     
