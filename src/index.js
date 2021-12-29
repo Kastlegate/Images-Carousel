@@ -16,7 +16,7 @@ document.body.style.backgroundImage = "url('../src/wheel.jpg')";
 let imagesArray = new Array();
 // images that go into the imagesArray
 imagesArray[0] = new Image();
-imagesArray[0].src = '../src/eye.jpg';
+imagesArray[0].src = eye;
 imagesArray[1] = new Image();
 imagesArray[1].src = '../src/hunt.jpg';
 imagesArray[2] = new Image();
