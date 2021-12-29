@@ -1,4 +1,9 @@
 import eye from './eye.jpg';
+import hunt from './hunt.jpg';
+import dragon from './dragon.jpg';
+import shadow from './shadow.jpg';
+import heaven from './heaven.jpg';
+import chaos from './chaos.jpg';
 import './style.css';
 import './all.css';
 import {  moveLeft, moveRight, selectedNav } from "./carouselFunctions";
