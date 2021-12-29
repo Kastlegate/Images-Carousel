@@ -15,17 +15,17 @@ document.body.style.backgroundImage = "url('../src/wheel.jpg')";
 let imagesArray = new Array();
 // images that go into the imagesArray
 imagesArray[0] = new Image();
-imagesArray[0].src = '.../src/eye.jpg';
+imagesArray[0].src = './eye.jpg';
 imagesArray[1] = new Image();
-imagesArray[1].src = '.../src/hunt.jpg';
+imagesArray[1].src = '../src/hunt.jpg';
 imagesArray[2] = new Image();
-imagesArray[2].src = '.../src/dragon.jpg';
+imagesArray[2].src = '../src/dragon.jpg';
 imagesArray[3] = new Image();
 imagesArray[3].src = '../src/shadow.jpg';
 imagesArray[4] = new Image();
-imagesArray[4].src = '.../src/heaven.jpg';
+imagesArray[4].src = '../src/heaven.jpg';
 imagesArray[5] = new Image();
-imagesArray[5].src = '.../src/chaos.jpg';
+imagesArray[5].src = '../src/chaos.jpg';
 
 
 
