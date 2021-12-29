@@ -11,7 +11,9 @@ import {  moveLeft, moveRight, selectedNav } from "./carouselFunctions";
 
 
 // background image
-document.body.style.backgroundImage = wheel;
+let backGroundImageWheel = new Image();
+backGroundImageWheel.src = wheel;
+document.body.style.backgroundImage = backGroundImageWheel.src;
 
 
 
